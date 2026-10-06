@@ -3,4 +3,4 @@
 2026-10-06 09:00:09 INFO  Batch 1 processed in 4200ms
 2026-10-06 09:00:15 ERROR Null value in management fee
 2026-10-06 09:00:20 INFO  Batch 2 processed in 6100ms
-2026-10-06 09:00:21 INFO  ERROR Batch 2 processed in 6100ms
+2026-10-06 09:00:25 ERROR Retry failed: ERROR from upstream
