@@ -1,8 +1,9 @@
 import re
 #old version is counting number of errors in a log file
 pattern = re.compile(r"Batch (\d+) processed in (\d+)ms")
-error_count=0
-slowest_time = float('inf')
+error_count = 0
+max_time = -1
+slowest_batch = -1
 with open("sample.log", "r") as file:
     for line in file:
         if "ERROR" in line: 
@@ -11,8 +12,8 @@ with open("sample.log", "r") as file:
         if match:
             batch_number = int(match.group(1))
             time_value = int(match.group(2))
-            if time_value<slowest_time:
-                slowest_time = time_value
-                batch_number = batch_number
-print(f"slowest batch is {batch_number}")            
+            if time_value > max_time:
+                slowest_batch = batch_number
+                max_time = time_value
+print(f"slowest batch is {slowest_batch}")            
 print(f"Errors: {error_count}")
