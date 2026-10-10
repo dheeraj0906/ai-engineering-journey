@@ -1,0 +1,11 @@
+line,expected
+2026-10-06 09:00:05 ERROR Timeout calling GetAssetData,TIMEOUT
+2026-10-06 09:00:15 ERROR Null value in management fee,DATA
+2026-10-06 09:00:25 ERROR Retry failed: ERROR from upstream,UPSTREAM
+2026-10-06 09:00:35 ERROR Invalid asset ID provided,DATA
+2026-10-06 09:00:45 ERROR Database connection failed,DB
+2026-10-06 09:00:55 ERROR Request timed out while fetching asset details,TIMEOUT
+2026-10-06 09:01:05 ERROR Missing value for asset management fee,DATA
+2026-10-06 09:01:15 ERROR Upstream service returned HTTP 503,UPSTREAM
+2026-10-06 09:01:25 ERROR Database query exceeded 30 second limit,TIMEOUT
+2026-10-06 09:01:35 ERROR No response from pricing service within deadline,TIMEOUT
